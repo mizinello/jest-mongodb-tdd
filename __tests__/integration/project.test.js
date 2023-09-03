@@ -4,7 +4,7 @@ const { MongoMemoryServer } = require("mongodb-memory-server");
 
 const app = require('../../src/app');
 
-describe('Project', () => {
+describe('Programmer', () => {
   let mongoServer;
   beforeAll(async () => {
     const mongod = await MongoMemoryServer.create();
@@ -32,7 +32,7 @@ describe('Project', () => {
 
   // POSITIVE CASE:
   //get all records of programmers
-  it('should be able to create a project', async () => {
+  it('should be able to create a programmers', async () => {
     const data = [{
       firstName: "Andi",
       lastName: "Wijayanto",
